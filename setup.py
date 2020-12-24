@@ -9,9 +9,10 @@ module_file = open("aldryn_boilerplates/__init__.py").read()
 metadata = dict(re.findall("__([a-z]+)__\s*=\s*'([^']+)'", module_file))
 
 REQUIREMENTS = [
-    'Django>=1.11',
+    'Django>=3.0',
     'YURL>=0.13',
     'django-appconf',
+    'six'
 ]
 
 
@@ -37,11 +38,10 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Internet :: WWW/HTTP',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 )
